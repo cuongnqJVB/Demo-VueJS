@@ -14,8 +14,9 @@ const actions = {
 
 // define the possible mutations that can be applied to our state
 const mutations = {
-    increment(state) {
+    increment(state, payload) {
         state.count++;
+        console.log('payload', payload);
     }
 }
 
