@@ -9,7 +9,10 @@ const state = {
 }
 
 const actions = {
-
+    increment({ commit }) {
+        commit('increment');
+        console.log('____Call actions:', commit);
+    }
 }
 
 // define the possible mutations that can be applied to our state
